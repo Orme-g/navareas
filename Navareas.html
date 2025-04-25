@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="Styles/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="Styles/navareas_style.css" />
+        <title>Navareas creator</title>
+    </head>
+    <body>
+        <section class="input_section">
+            <div class="header"><h1 class="animated-title">Navareas Creator</h1></div>
+            <!-- <h1 class="animated-title">Navareas Creator</h1> -->
+            <div class="input-info">* Positions should be in format: 55-20.55N / 55-20N</div>
+            <div class="input-and-settings_wrapper">
+                <div class="input_wrapper">
+                    <textarea
+                        class="input-plain-text"
+                        placeholder="Input data from Navarea..."
+                    ></textarea>
+                    <button class="clear-input-button">Clear</button>
+                </div>
+                <div class="settings-wrapper">
+                    <div class="settings">
+                        <div class="settings_item">
+                            <div class="settings_title file-title">Navarea Filename:</div>
+                            <input
+                                class="settings_field file-data fielname-field"
+                                type="text"
+                                placeholder="NAVAREA X"
+                            /><span class="settings_title">.xml</span>
+                        </div>
+                        <div class="settings_item">
+                            <div class="settings_title file-title">File description:</div>
+                            <input
+                                class="settings_field file-data file-description"
+                                type="text"
+                                placeholder="Warnings for NAVAREA X"
+                            />
+                        </div>
+                        <div class="settings-fields-wrapper">
+                            <div class="settings-container lines">
+                                <div class="settings-left-side">
+                                    <div class="line-select-wrapper">
+                                        <select class="select-menu select-line">
+                                            <option value="1">Coast line</option>
+                                            <option value="2">Nav line</option>
+                                            <option value="3">Route line</option>
+                                            <option value="4">Depth line</option>
+                                        </select>
+                                        <div class="line-image_wrapper">
+                                            <img
+                                                class="line-example"
+                                                src="./assets/coast.PNG"
+                                                alt="line"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="settings_item">
+                                        <div class="settings_title">Danger:</div>
+                                        <input
+                                            class="settings_field line-danger"
+                                            type="checkbox"
+                                            checked
+                                        />
+                                        <div class="settings_title radar-title">On Radar:</div>
+                                        <input
+                                            class="settings_field line-radar-display"
+                                            type="checkbox"
+                                        />
+                                    </div>
+                                    <div class="settings_item">
+                                        <div class="settings_title">Name:</div>
+                                        <input
+                                            class="settings_field notice-name line-name"
+                                            type="text"
+                                            placeholder="Notice Nr. (999/25)"
+                                        />
+                                    </div>
+                                    <div class="settings-buttons">
+                                        <button class="add-line">Add</button>
+                                        <button class="clear-line">Clear</button>
+                                    </div>
+                                </div>
+                                <div class="settings-right-side">
+                                    <textarea
+                                        class="input-description line-description"
+                                        placeholder="Line description..."
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <div class="settings-container area">
+                                <div class="settings-left-side">
+                                    <div class="settings_item">
+                                        <div class="settings_title">Danger:</div>
+                                        <input
+                                            class="settings_field area-danger"
+                                            type="checkbox"
+                                            checked
+                                        />
+                                        <div class="settings_title radar-title">On Radar:</div>
+                                        <input
+                                            class="settings_field area-radar-display"
+                                            type="checkbox"
+                                        />
+                                    </div>
+                                    <div class="settings_item">
+                                        <div class="settings_title">Name:</div>
+                                        <input
+                                            class="settings_field notice-name area-name"
+                                            type="text"
+                                            placeholder="Notice Nr. (999/25)"
+                                        />
+                                    </div>
+                                    <div class="settings-buttons">
+                                        <button class="add-area">Add</button>
+                                        <button class="clear-area">Clear</button>
+                                    </div>
+                                </div>
+                                <div class="settings-right-side">
+                                    <textarea
+                                        class="input-description area-decription"
+                                        placeholder="Area description..."
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <div class="settings-container labels">
+                                <div class="settings-left-side">
+                                    <select class="select-menu select-label">
+                                        <option value="1">Label</option>
+                                        <option value="2">Point</option>
+                                    </select>
+
+                                    <div class="settings_item">
+                                        <div class="settings_title">Danger:</div>
+                                        <input
+                                            class="settings_field labels-danger"
+                                            type="checkbox"
+                                            checked
+                                        />
+
+                                        <div class="settings_title radar-title">On Radar:</div>
+                                        <input
+                                            class="settings_field labels-radar-display"
+                                            type="checkbox"
+                                        />
+                                    </div>
+                                    <div class="settings_item">
+                                        <div class="settings_title">Name:</div>
+                                        <input
+                                            class="settings_field notice-name label-name"
+                                            type="text"
+                                            placeholder="Notice Nr. (999/25)"
+                                        />
+                                    </div>
+                                    <div class="settings_item">
+                                        <div class="settings_title">Label text:</div>
+                                        <input
+                                            class="settings_field label-text"
+                                            type="text"
+                                            placeholder="Label"
+                                        />
+                                    </div>
+                                    <div class="settings-buttons">
+                                        <button class="add-labels">Add</button>
+                                        <button class="clear-labels">Clear</button>
+                                    </div>
+                                </div>
+                                <div class="settings-right-side">
+                                    <textarea
+                                        class="input-description label-decription"
+                                        placeholder="Labels description..."
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <div class="settings-container circle">
+                                <div class="settings-left-side">
+                                    <div class="settings_item">
+                                        <div class="settings_title">Danger:</div>
+                                        <input
+                                            class="settings_field circle-danger"
+                                            type="checkbox"
+                                            checked
+                                        />
+                                        <div class="settings_title radar-title">On Radar:</div>
+                                        <input
+                                            class="settings_field circle-radar-display"
+                                            type="checkbox"
+                                        />
+                                    </div>
+                                    <div class="settings_item">
+                                        <div class="settings_title">Circle radius:</div>
+                                        <input
+                                            class="settings_field circle-radius"
+                                            type="number"
+                                            placeholder="30"
+                                        />
+                                    </div>
+                                    <div class="settings_item">
+                                        <div class="settings_title">Name:</div>
+                                        <input
+                                            class="settings_field notice-name circle-name"
+                                            type="text"
+                                            placeholder="Notice Nr. (999/25)"
+                                        />
+                                    </div>
+                                    <div class="settings-buttons">
+                                        <button class="add-circle">Add</button>
+                                        <button class="clear-circle">Clear</button>
+                                    </div>
+                                </div>
+                                <div class="settings-right-side">
+                                    <textarea
+                                        class="input-description circle-decription"
+                                        placeholder="Circle description..."
+                                    ></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notices-added_wrapper">
+                <div class="notices-added_title">Notices added:</div>
+                <div class="notices-added_list"></div>
+            </div>
+        </section>
+        <section class="output_section">
+            <h3 class="output-title">Output code:</h3>
+            <div class="output-and-buttons_wrapper">
+                <textarea readonly class="text_output"></textarea>
+                <div class="buttons_wrapper">
+                    <button class="copy-button">Copy output</button>
+                    <button class="clear-output-button">Clear output</button>
+                    <a href="#" class="download-link hide">Download File</a>
+                </div>
+            </div>
+        </section>
+        <div class="snackbar hide-snackbar"></div>
+        <script src="./Scripts/navareas.js"></script>
+    </body>
+</html>
